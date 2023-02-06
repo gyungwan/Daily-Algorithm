@@ -1,0 +1,17 @@
+function solution(numbers) {
+  let answer = numbers.sort((a, b) => b - a);
+
+  return answer[0] * answer[1];
+}
+
+/////
+
+function solution(numbers) {
+  let max = -1; //최솟값을 넣어놓고
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+      max = Math.max(max, numbers[i] * numbers[j]);
+    }
+  }
+  return max;
+}
