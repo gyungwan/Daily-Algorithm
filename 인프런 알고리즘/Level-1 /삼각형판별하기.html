@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(a, b, c) {
+        let answer = 0;
+        let max = 0;
+        if (a < b) max = b;
+        else max = a;
+        if (max < c) max = c;
+
+        if (max > a) answer += a;
+        if (max > b) answer += b;
+        if (max > c) answer += c;
+
+        console.log(answer);
+        if (max < answer) {
+          answer = "YES";
+        } else {
+          answer = "NO";
+        }
+        return answer;
+      }
+
+      console.log(solution(6, 7, 11));
+    </script>
+  </body>
+</html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(a, b, c) {
+        let answer = "";
+        let total = a + b + c;
+        let max = 0;
+        if (a < b) max = b;
+        else max = a;
+        if (max < c) max = c;
+
+        if (total - max > max) {
+          answer = "Yes";
+        } else answer = "NO";
+
+        return answer;
+      }
+
+      console.log(solution(6, 7, 11));
+    </script>
+  </body>
+</html>
