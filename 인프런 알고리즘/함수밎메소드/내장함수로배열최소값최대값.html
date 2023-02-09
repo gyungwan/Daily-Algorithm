@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(arr) {
+        //배열 자체를 넣으면 내장함수 자체에서 배열안의 값을 못 꺼내오기때문에
+        //스프레드연산자(전개연산자) ... 을 사용해준다
+        let min = Math.min(...arr);
+        // 배열의 최소값 구하는 내장함수
+        let max = Math.max(...arr);
+        // 배열의 최대값 구하는 내장함수
+        return answer;
+      }
+      let arr = [5, 7, 1, 3, 2, 9, 11];
+      console.log(solution(arr));
+    </script>
+  </body>
+</html>
