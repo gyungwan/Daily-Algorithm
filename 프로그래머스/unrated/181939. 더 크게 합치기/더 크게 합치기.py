@@ -1,8 +1,4 @@
 def solution(a, b):
-    answer1 = str(a)+str(b)
-    answer2 = str(b)+str(a)
-    if answer1 > answer2:
-        answer = answer1
-    else:
-        answer = answer2
-    return int(answer)
+    a ,b = str(a), str(b)
+
+    return int(max(a+b , b+a))
